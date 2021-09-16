@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "103689221419",
-    "project_id": "appfirebase-4f3d1",
-    "storage_bucket": "appfirebase-4f3d1.appspot.com"
+    "project_number": "64567386573",
+    "project_id": "women-assist-2f11b",
+    "storage_bucket": "women-assist-2f11b.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:103689221419:android:bd4ab3c374af5720b9416e",
+        "mobilesdk_app_id": "1:64567386573:android:a4c6a36671444f06cba484",
         "android_client_info": {
-          "package_name": "com.orange.tpodc"
+          "package_name": "com.orange.womenassist"
         }
       },
       "oauth_client": [
         {
-          "client_id": "103689221419-2v30ri52np0hp331jbc5vu2m82bu81p5.apps.googleusercontent.com",
+          "client_id": "64567386573-di9q5ig1i63h4g8dbqhklfa0gecsvt8v.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCdzINXiCzKhygBJgHf1r7K4kuRrr7QJik"
+          "current_key": "AIzaSyB6zTiExmoSJKJI0Sga0l_THdtJFwaXiSU"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "103689221419-2v30ri52np0hp331jbc5vu2m82bu81p5.apps.googleusercontent.com",
+              "client_id": "64567386573-di9q5ig1i63h4g8dbqhklfa0gecsvt8v.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
