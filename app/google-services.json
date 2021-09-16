@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "103689221419",
+    "project_id": "appfirebase-4f3d1",
+    "storage_bucket": "appfirebase-4f3d1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:103689221419:android:bd4ab3c374af5720b9416e",
+        "android_client_info": {
+          "package_name": "com.orange.tpodc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "103689221419-2v30ri52np0hp331jbc5vu2m82bu81p5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdzINXiCzKhygBJgHf1r7K4kuRrr7QJik"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "103689221419-2v30ri52np0hp331jbc5vu2m82bu81p5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
