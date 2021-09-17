@@ -34,6 +34,12 @@ dependencies {
     implementation 'com.google.firebase:firebase-auth'
     implementation 'com.google.firebase:firebase-firestore:23.0.3'
 
+<<<<<<< HEAD
+=======
+
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+>>>>>>> c91f4843a7d0493e96d533d891eb66ae81d9ce51
     implementation 'com.google.android.material:material:1.4.0'
 
     implementation 'com.android.support:appcompat-v7:28.0.0'
