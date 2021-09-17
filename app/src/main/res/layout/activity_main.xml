@@ -24,7 +24,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.977" />
 
-<<<<<<< HEAD
     <TextView
         android:id="@+id/inscrire"
         android:layout_width="wrap_content"
@@ -39,7 +38,7 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.031"
+        app:layout_constraintHorizontal_bias="0.021"
         app:layout_constraintStart_toEndOf="@id/no_compte"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.988" />
@@ -105,6 +104,4 @@
         app:layout_constraintTop_toBottomOf="@+id/revoir"
         app:layout_constraintVertical_bias="0.232" />
 
-=======
->>>>>>> c91f4843a7d0493e96d533d891eb66ae81d9ce51
 </androidx.constraintlayout.widget.ConstraintLayout>
