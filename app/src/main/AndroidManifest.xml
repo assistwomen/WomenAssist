@@ -10,20 +10,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WomenAssist">
         <activity
-            android:name=".SplashScreenActivity"
-            android:exported="true">
-        <intent-filter>
+            android:name=".ContactConfianceActivity"
+            android:exported="true" >
+            <intent-filter>
             <action android:name="android.intent.action.MAIN" />
 
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
-    </activity>
+        </activity>
+        <activity
+            android:name=".SplashScreenActivity"
+            android:exported="true"/>
+
         <activity
             android:name=".ConnexionActivity"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:exported="true"/>
+            android:exported="true" />
     </application>
 
 </manifest>

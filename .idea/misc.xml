@@ -4,12 +4,22 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/drawable/button.xml" value="0.2203125" />
+        <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/drawable/contact.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/drawable/ic_back.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/drawable/ic_baseline_chevron_left_24.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/drawable/ic_splashscreen.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/drawable/input_field.xml" value="0.2203125" />
         <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/layout/activity_connexion.xml" value="0.25" />
+        <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/layout/activity_contact_confiance.xml" value="0.2" />
         <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/layout/activity_splash_screen.xml" value="0.2" />
+        <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/layout/contact_fragment.xml" value="0.2" />
+        <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/layout/edit_fragment.xml" value="0.2" />
+        <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/layout/item_contact.xml" value="0.25" />
+        <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/layout/protecteur_fragment.xml" value="0.2" />
+        <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/layout/protege_fragment.xml" value="0.1" />
       </map>
     </option>
   </component>
