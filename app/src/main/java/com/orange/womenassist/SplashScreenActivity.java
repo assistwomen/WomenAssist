@@ -8,13 +8,14 @@ import android.os.Handler;
 
 public class SplashScreenActivity extends AppCompatActivity {
 
-    private final int SPLASH_SCREEN_TIMEOUT = 3000;
+    private final int SPLASH_SCREEN_TIMEOUT = 10000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
-        getSupportActionBar().hide();
+//        getSupportActionBar().hide();
+
 
         //Rediriger vers la page de bienvenue après 3 secondes
         new Handler().postDelayed(new Runnable() {

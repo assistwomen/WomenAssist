@@ -64,7 +64,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="28dp"
         android:layout_marginEnd="8dp"
-        android:background="@drawable/button"
+        android:background="@drawable/redbutton"
         android:fontFamily="@font/bold"
         android:text="Connexion"
         android:textAllCaps="false"
