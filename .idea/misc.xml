@@ -7,7 +7,27 @@
         <entry key="..\:/Users/supre/AndroidStudioProjects/WomenAssist/app/src/main/res/drawable/input_field.xml" value="0.11614583333333334" />
         <entry key="..\:/Users/supre/AndroidStudioProjects/WomenAssist/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/supre/AndroidStudioProjects/proget ODC/WomenAssist/app/src/main/res/drawable/button.xml" value="0.11614583333333334" />
+        <entry key="..\:/Users/supre/AndroidStudioProjects/proget ODC/WomenAssist/app/src/main/res/drawable/button2.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/supre/AndroidStudioProjects/proget ODC/WomenAssist/app/src/main/res/drawable/form_button.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/supre/AndroidStudioProjects/proget ODC/WomenAssist/app/src/main/res/drawable/input_field.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/supre/AndroidStudioProjects/proget ODC/WomenAssist/app/src/main/res/layout/activity_affiche_association.xml" value="0.1175925925925926" />
+        <entry key="..\:/Users/supre/AndroidStudioProjects/proget ODC/WomenAssist/app/src/main/res/layout/activity_aide.xml" value="0.33" />
+        <entry key="..\:/Users/supre/AndroidStudioProjects/proget ODC/WomenAssist/app/src/main/res/layout/activity_ajout_article.xml" value="0.22" />
+        <entry key="..\:/Users/supre/AndroidStudioProjects/proget ODC/WomenAssist/app/src/main/res/layout/activity_ajout_fiche_conseil.xml" value="0.22" />
+        <entry key="..\:/Users/supre/AndroidStudioProjects/proget ODC/WomenAssist/app/src/main/res/layout/activity_ajout_forum.xml" value="0.22" />
+        <entry key="..\:/Users/supre/AndroidStudioProjects/proget ODC/WomenAssist/app/src/main/res/layout/activity_ajout_responsable.xml" value="0.22" />
+        <entry key="..\:/Users/supre/AndroidStudioProjects/proget ODC/WomenAssist/app/src/main/res/layout/activity_apropos.xml" value="0.33" />
+        <entry key="..\:/Users/supre/AndroidStudioProjects/proget ODC/WomenAssist/app/src/main/res/layout/activity_compte_association.xml" value="0.25" />
+        <entry key="..\:/Users/supre/AndroidStudioProjects/proget ODC/WomenAssist/app/src/main/res/layout/activity_compte_association2.xml" value="0.22" />
+        <entry key="..\:/Users/supre/AndroidStudioProjects/proget ODC/WomenAssist/app/src/main/res/layout/activity_compte_membre.xml" value="0.25" />
+        <entry key="..\:/Users/supre/AndroidStudioProjects/proget ODC/WomenAssist/app/src/main/res/layout/activity_details_conseil.xml" value="0.2" />
         <entry key="..\:/Users/supre/AndroidStudioProjects/proget ODC/WomenAssist/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/supre/AndroidStudioProjects/proget ODC/WomenAssist/app/src/main/res/layout/activity_modifier_article.xml" value="0.25" />
+        <entry key="..\:/Users/supre/AndroidStudioProjects/proget ODC/WomenAssist/app/src/main/res/layout/activity_modifier_fiche_conseil.xml" value="0.17037037037037037" />
+        <entry key="..\:/Users/supre/AndroidStudioProjects/proget ODC/WomenAssist/app/src/main/res/layout/activity_modifier_forum.xml" value="0.25" />
+        <entry key="..\:/Users/supre/AndroidStudioProjects/proget ODC/WomenAssist/app/src/main/res/layout/activity_mon_compte.xml" value="0.22" />
+        <entry key="..\:/Users/supre/AndroidStudioProjects/proget ODC/WomenAssist/app/src/main/res/layout/activity_notification.xml" value="0.5" />
+        <entry key="..\:/Users/supre/AndroidStudioProjects/proget ODC/WomenAssist/app/src/main/res/layout/activity_register_member.xml" value="0.33" />
       </map>
     </option>
   </component>

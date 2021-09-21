@@ -10,6 +10,54 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WomenAssist">
         <activity
+            android:name=".AfficheAssociation"
+            android:exported="true" />
+        <activity
+            android:name=".DetailsConseil"
+            android:exported="true" />
+        <activity
+            android:name=".CompteMembre"
+            android:exported="true" />
+        <activity
+            android:name=".MonCompte"
+            android:exported="true" />
+        <activity
+            android:name=".Aide"
+            android:exported="true" />
+        <activity
+            android:name=".A_Propos"
+            android:exported="true" />
+        <activity
+            android:name=".Notification"
+            android:exported="true" />
+        <activity
+            android:name=".AjoutResponsable"
+            android:exported="true" />
+        <activity
+            android:name=".ModifierArticle"
+            android:exported="true" />
+        <activity
+            android:name=".AjoutArticle"
+            android:exported="true" />
+        <activity
+            android:name=".ModifierFicheConseil"
+            android:exported="true" />
+        <activity
+            android:name=".AjoutFicheConseil"
+            android:exported="true" />
+        <activity
+            android:name=".AjoutForum"
+            android:exported="true" />
+        <activity
+            android:name=".ModifierForum"
+            android:exported="true" />
+        <activity
+            android:name=".CompteAssociation2"
+            android:exported="true" />
+        <activity
+            android:name=".CompteAssociation"
+            android:exported="true" />
+        <activity
             android:name=".RegisterMemberActivity"
             android:exported="true">
             <intent-filter>
