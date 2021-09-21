@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".A_Propos"
+    android:background="@color/white">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="330dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/regular"
+        android:text="Women Assist est la première application d'aide au femmes victimes de violence au Cameroun. Initié lors d'un workshop à Orange Digital Center, elle voit le jour le 12 octobre 2021 sous l'impulsion de 03 ingénieurs déterminés à remédier au problème de violence sur la femme."
+        android:textColor="@color/dark"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/dark"
+        android:fontFamily="@font/regular"
+        android:textSize="15dp"
+        android:text="Insécurité, Menaces, Harcèlement, Violence conjugale, psychologiques, Sexuelles"
+        app:layout_constraintStart_toStartOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="@font/regular"
+        android:textSize="15dp"
+        android:textColor="@color/pink"
+        android:text="Version 0.1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView16"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="@+id/textView16" />
+</androidx.constraintlayout.widget.ConstraintLayout>
