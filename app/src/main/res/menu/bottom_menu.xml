@@ -2,17 +2,23 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-<item
-    android:id="@+id/forum"
-    android:title="Forums"
-    app:showAsAction="ifRoom"
-    android:icon="@drawable/ic_baseline_forum_24"/>
+    <item
+        android:id="@+id/forum"
+        android:title="Forums"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_baseline_forum_24"/>
 
     <item
         android:id="@+id/contact"
         android:title="Contacts"
         app:showAsAction="ifRoom"
         android:icon="@drawable/ic_baseline_contact_phone_24"/>
+
+    <item
+        android:id="@+id/holder"
+        android:title=""
+        app:showAsAction="ifRoom"
+        android:enabled="false"/>
 
     <item
         android:id="@+id/article"
@@ -22,7 +28,7 @@
 
     <item
         android:id="@+id/parametres"
-        android:title="Menu"
+        android:title="Paramètres"
         app:showAsAction="ifRoom"
         android:icon="@drawable/ic_baseline_menu_24"/>
 </menu>
