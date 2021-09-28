@@ -10,6 +10,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WomenAssist">
         <activity
+            android:name=".ResponsableAssociationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ListeArticleActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ListeForumActivity"
+            android:exported="true" />
+        <activity
+            android:name=".FicheConseilActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ListeAssociationActivity"
+            android:exported="true" />
+        <activity
             android:name=".AfficheAssociation"
             android:exported="true" />
         <activity
@@ -59,35 +80,22 @@
             android:exported="true" />
         <activity
             android:name=".RegisterMemberActivity"
-            android:exported="true">
-        </activity>
-
+            android:exported="true" />
         <activity
             android:name=".ConnexionActivity"
             android:exported="true" />
         <activity
             android:name=".HomeActivity"
-            android:exported="true">
-        </activity>
-
+            android:exported="true" />
         <activity
             android:name=".ContactConfianceActivity"
-            android:exported="true" >
-        </activity>
-
+            android:exported="true" />
         <activity
             android:name=".SplashScreenActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true" />
-
     </application>
 
 </manifest>

@@ -1,14 +1,1 @@
-package com.orange.womenassist;
-
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.os.Bundle;
-
-public class ModifierFicheConseil extends AppCompatActivity {
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_modifier_fiche_conseil);
-    }
-}
+package com.orange.womenassist;import androidx.appcompat.app.AppCompatActivity;import android.os.Bundle;public class ModifierFicheConseil extends AppCompatActivity {    @Override    protected void onCreate(Bundle savedInstanceState) {        super.onCreate(savedInstanceState);        setContentView(R.layout.activity_modifier_fiche_conseil);    }}
