@@ -11,6 +11,8 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,6 +21,7 @@ public class FragmentProtege extends Fragment {
     View view;
     private RecyclerView recyclerView;
     private List<ContactConfiance> contactConfianceList;
+    private FloatingActionButton floatingActionButton;
 
     public FragmentProtege() {
     }
@@ -27,7 +30,9 @@ public class FragmentProtege extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.protege_fragment, container, false);
-        recyclerView = view.findViewById(R.id.contact_recyclerview);
+        recyclerView = view.findViewById(R.id.lstAssociation_recyclerview);
+        floatingActionButton = view.findViewById(R.id.floating_btn);
+        recyclerView.setHasFixedSize(true);
         RecyclerViewAdapter recyclerViewAdapter = new RecyclerViewAdapter(getContext(), contactConfianceList);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         recyclerView.setAdapter(recyclerViewAdapter);

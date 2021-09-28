@@ -31,7 +31,8 @@ public class FragmentProtecteur extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.protecteur_fragment, container,false);
-        recyclerView = view.findViewById(R.id.contact_recyclerview);
+        recyclerView = view.findViewById(R.id.lstAssociation_recyclerview);
+        recyclerView.setHasFixedSize(true);
         floatingActionButton = view.findViewById(R.id.floating_btn);
         RecyclerViewAdapter recyclerViewAdapter = new RecyclerViewAdapter(getContext(), contactConfianceList);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
