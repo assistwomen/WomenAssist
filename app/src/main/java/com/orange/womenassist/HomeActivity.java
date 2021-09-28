@@ -3,6 +3,7 @@ package com.orange.womenassist;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.cardview.widget.CardView;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
@@ -28,6 +29,7 @@ public class HomeActivity extends AppCompatActivity {
     BottomNavigationView bottomNavigationView;
     ImageView messageUrgence, appelUrgence;
     private GpsTracker gpsTracker;
+    CardView cdvAssociation, cdvFicheConseil;
     private static final int ACTION_CALL_PERMISSION_CODE = 100;
     private static final int SEND_SMS_PERMISSION_CODE = 101;
     private static final int FINE_LOCATION_PERMISSION_CODE = 102;
@@ -36,15 +38,17 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        bottomNavigationView = findViewById(R.id.bottomNavigationView);
-        bottomNavigationView.setBackground(null);
 
         //initialyse varibles
         messageUrgence = findViewById(R.id.imgmessageUrgence);
         appelUrgence = findViewById(R.id.imgappelUrgence);
         Toolbar toolbar = findViewById(R.id.homeToolbar);
+        bottomNavigationView = findViewById(R.id.bottomNavigationView);
+        cdvFicheConseil = findViewById(R.id.cdvFicheConseil);
+        cdvAssociation = findViewById(R.id.cdvAssociation);
 
         setSupportActionBar(toolbar);
+        bottomNavigationView.setBackground(null);
 
         //authetification anonyme
         if(FireBaseUtils.signInAnonymously() == null)
@@ -77,6 +81,23 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
+        //ecouteur association
+        cdvAssociation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomeActivity.this, ConnexionActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        //ecouteur fiche conseil
+        cdvFicheConseil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomeActivity.this, ConnexionActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 
@@ -126,7 +147,6 @@ public class HomeActivity extends AppCompatActivity {
                 Toast.makeText(HomeActivity.this, "Envoie des message refusé", Toast.LENGTH_SHORT).show();
             }
         }
-
 
         else if (requestCode == FINE_LOCATION_PERMISSION_CODE) {
             if (grantResults.length > 0
@@ -179,7 +199,7 @@ public class HomeActivity extends AppCompatActivity {
             Intent intent = new Intent(this, ConnexionActivity.class);
             startActivity(intent);
         }else if (id == R.id.register){
-            Intent intent = new Intent(this, CompteMembre.class);
+            Intent intent = new Intent(this, RegisterMemberActivity.class);
             startActivity(intent);
         }else if (id == R.id.registerAssociation){
             Intent intent = new Intent(this, CompteAssociation.class);
