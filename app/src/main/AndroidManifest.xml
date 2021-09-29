@@ -10,17 +10,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WomenAssist">
         <activity
-            android:name=".ResponsableAssociationActivity"
-            android:exported="true" />
-        <activity
-            android:name=".ListeArticleActivity"
-            android:exported="true">
+            android:name=".HistoriqueAlerteActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MembreAssociationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ResponsableAssociationActivity"
+            android:exported="true"/>
+
+        <activity
+            android:name=".ListeArticleActivity"
+            android:exported="true" />
         <activity
             android:name=".ListeForumActivity"
             android:exported="true" />
