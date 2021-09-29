@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Rejoignez-nous"
+        android:id="@+id/register"/>
+    <item
+        android:title="Connectez-vous"
+        android:id="@+id/connexion"/>
+    <item
+        android:title="Nouvelle Association"
+        android:id="@+id/registerAssociation"/>
+</menu>

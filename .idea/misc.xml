@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/drawable/blackbutton.xml" value="0.2203125" />
         <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/drawable/bool.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/drawable/bool_dark.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/drawable/bool_red.xml" value="0.21614583333333334" />
@@ -50,6 +51,7 @@
       </map>
     </option>
   </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

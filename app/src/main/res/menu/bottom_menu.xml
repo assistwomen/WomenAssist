@@ -5,13 +5,11 @@
     <item
         android:id="@+id/forum"
         android:title="Forums"
-        app:showAsAction="ifRoom"
         android:icon="@drawable/ic_baseline_forum_24"/>
 
     <item
         android:id="@+id/contact"
         android:title="Contacts"
-        app:showAsAction="ifRoom"
         android:icon="@drawable/ic_baseline_contact_phone_24"/>
 
     <item
