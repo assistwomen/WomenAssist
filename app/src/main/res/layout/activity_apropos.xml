@@ -7,22 +7,69 @@
     tools:context=".A_Propos"
     android:background="@color/white">
 
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/pink"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="16dp">
+
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_chevron_left_24" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:text="A propos"
+                android:textColor="@color/white"
+                android:textSize="19dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
     <View
         android:id="@+id/view"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="24dp"
         android:background="@drawable/info"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
     <TextView
         android:id="@+id/textView15"
         android:layout_width="330dp"
         android:layout_height="110dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="24dp"
         android:fontFamily="@font/regular"
         android:text="Women Assist est la première application d'aide au femmes victimes de violence au Cameroun. Initié lors d'un workshop à Orange Digital Center, elle voit le jour le 12 octobre 2021 sous l'impulsion de 03 ingénieurs déterminés à remédier au problème de violence sur la femme."
         android:textColor="@color/dark"
@@ -35,11 +82,10 @@
         android:id="@+id/textView16"
         android:layout_width="330dp"
         android:layout_height="50dp"
-        android:layout_marginTop="8dp"
-        android:textColor="@color/dark"
         android:fontFamily="@font/regular"
-        android:textSize="15dp"
         android:text="Insécurité, Menaces, Harcèlement, Violence conjugale, psychologiques, Sexuelles"
+        android:textColor="@color/dark"
+        android:textSize="15dp"
         app:layout_constraintStart_toStartOf="@+id/textView15"
         app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
@@ -47,11 +93,11 @@
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="24dp"
         android:fontFamily="@font/regular"
-        android:textSize="15dp"
-        android:textColor="@color/pink"
         android:text="Version 0.1"
+        android:textColor="@color/pink"
+        android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/textView16"
         app:layout_constraintHorizontal_bias="0.501"

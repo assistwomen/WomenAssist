@@ -19,7 +19,7 @@ public class ContactConfianceActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contact_confiance);
-        getSupportActionBar().hide();
+//        getSupportActionBar().hide();
 
         tabLayout = findViewById(R.id.tablayout_id);
         viewPager = findViewById(R.id.viewpager_id);
@@ -31,7 +31,7 @@ public class ContactConfianceActivity extends AppCompatActivity {
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);
 
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.setElevation(0);
+//        ActionBar actionBar = getSupportActionBar();
+//        actionBar.setElevation(0);
     }
 }

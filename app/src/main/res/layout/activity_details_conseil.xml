@@ -28,8 +28,8 @@
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="?attr/colorPrimary"
+            android:layout_height="65dp"
+            android:background="@color/pink"
             android:minHeight="?attr/actionBarSize"
             android:theme="?attr/actionBarTheme"
             app:layout_constraintEnd_toEndOf="parent"
@@ -62,21 +62,11 @@
         app:layout_constraintTop_toTopOf="@+id/appBarLayout" />
 
     <View
-        android:id="@+id/view3"
-        android:layout_width="59dp"
-        android:layout_height="59dp"
-        android:layout_marginTop="384dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/downgroupe"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/scrollView3" />
-
-    <View
         android:id="@+id/view2"
         android:layout_width="33dp"
         android:layout_height="33dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
         android:background="@drawable/deletepink"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view" />
@@ -85,8 +75,8 @@
         android:id="@+id/view5"
         android:layout_width="33dp"
         android:layout_height="33dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
         android:background="@drawable/editgroupe"
         app:layout_constraintEnd_toStartOf="@+id/view2"
         app:layout_constraintTop_toBottomOf="@+id/view" />
@@ -95,28 +85,28 @@
         android:id="@+id/textView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:text="Titre"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
         android:fontFamily="@font/regular"
-        android:textSize="16dp"
+        android:text="Titre"
         android:textColor="@color/pink"
+        android:textSize="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view" />
 
     <ScrollView
         android:id="@+id/scrollView3"
-        android:layout_width="360dp"
-        android:layout_height="400dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="40dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view"
-        app:layout_constraintVertical_bias="0.765">
+        app:layout_constraintTop_toBottomOf="@+id/view2">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -129,9 +119,23 @@
                 android:layout_height="match_parent"
                 android:fontFamily="@font/regular"
                 android:text="Description"
+                android:padding="8dp"
                 android:textSize="13dp" />
         </LinearLayout>
     </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        app:maxImageSize="40dp"
+        android:backgroundTint="@color/pink"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/download" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
