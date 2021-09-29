@@ -50,19 +50,41 @@ public class HomeActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         bottomNavigationView.setBackground(null);
 
+        bottomNavigationView.setOnNavigationItemReselectedListener(new BottomNavigationView.OnNavigationItemReselectedListener() {
+            @Override
+            public void onNavigationItemReselected(@NonNull MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.forum:
+                        startActivity( new Intent( HomeActivity.this , ListeForum.class));
+                        break;
+                    case R.id.contact:
+                        startActivity( new Intent( HomeActivity.this , ContactConfianceActivity.class));
+                        break;
+                    case R.id.holder:
+                        break;
+                    case R.id.article:
+                        startActivity( new Intent( HomeActivity.this , ListeArticle.class));
+                        break;
+                    case R.id.parametres:
+                        startActivity( new Intent( HomeActivity.this , MonCompte.class));
+                        break;
+
+                }
+            }
+        });
+
         //authetification anonyme
-        if(FireBaseUtils.signInAnonymously() == null)
-        {
+        if (FireBaseUtils.signInAnonymously() == null) {
             Toast.makeText(this, "Vous n'êtes pas connecté", Toast.LENGTH_LONG).show();
         }
 
         try {
-            if (ContextCompat.checkSelfPermission(getApplicationContext(), android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED ) {
+            if (ContextCompat.checkSelfPermission(getApplicationContext(), android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
                 ActivityCompat.requestPermissions(this, new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION}, FINE_LOCATION_PERMISSION_CODE);
             }
-        } catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
-            Toast.makeText(getApplicationContext(), "Une exception s'est produite",Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), "Une exception s'est produite", Toast.LENGTH_LONG).show();
         }
 
         //ecouteur pour appel
@@ -85,7 +107,7 @@ public class HomeActivity extends AppCompatActivity {
         cdvAssociation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(HomeActivity.this, ConnexionActivity.class);
+                Intent intent = new Intent(HomeActivity.this, ListeAssociationActivity.class);
                 startActivity(intent);
             }
         });
@@ -94,7 +116,7 @@ public class HomeActivity extends AppCompatActivity {
         cdvFicheConseil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(HomeActivity.this, ConnexionActivity.class);
+                Intent intent = new Intent(HomeActivity.this, FicheConseilActivity.class);
                 startActivity(intent);
             }
         });
@@ -102,17 +124,15 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     // Function to check and request permission.
-    public void checkPermission(String permission, int requestCode)
-    {
+    public void checkPermission(String permission, int requestCode) {
         if (ContextCompat.checkSelfPermission(HomeActivity.this, permission) == PackageManager.PERMISSION_DENIED) {
 
             // Requesting the permission
-            ActivityCompat.requestPermissions(HomeActivity.this, new String[] { permission }, requestCode);
-        }
-        else {
-            if(requestCode == ACTION_CALL_PERMISSION_CODE)
+            ActivityCompat.requestPermissions(HomeActivity.this, new String[]{permission}, requestCode);
+        } else {
+            if (requestCode == ACTION_CALL_PERMISSION_CODE)
                 makeCall();
-            if(requestCode == SEND_SMS_PERMISSION_CODE)
+            if (requestCode == SEND_SMS_PERMISSION_CODE)
                 sendSMD();
         }
     }
@@ -122,23 +142,19 @@ public class HomeActivity extends AppCompatActivity {
     // Request Code is used to check which permission called this function.
     // This request code is provided when the user is prompt for permission.
     @Override
-    public void onRequestPermissionsResult(int requestCode,@NonNull String[] permissions, @NonNull int[] grantResults)
-    {
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode,
                 permissions,
                 grantResults);
 
         if (requestCode == ACTION_CALL_PERMISSION_CODE) {
             if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                Toast.makeText(HomeActivity.this, "Gestion des appels autorisée", Toast.LENGTH_SHORT) .show();
+                Toast.makeText(HomeActivity.this, "Gestion des appels autorisée", Toast.LENGTH_SHORT).show();
                 makeCall();
+            } else {
+                Toast.makeText(HomeActivity.this, "Gestion des appels refusée", Toast.LENGTH_SHORT).show();
             }
-            else {
-                Toast.makeText(HomeActivity.this, "Gestion des appels refusée", Toast.LENGTH_SHORT) .show();
-            }
-        }
-
-        else if (requestCode == SEND_SMS_PERMISSION_CODE) {
+        } else if (requestCode == SEND_SMS_PERMISSION_CODE) {
             if (grantResults.length > 0
                     && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 Toast.makeText(HomeActivity.this, "Envoie des message autorisé", Toast.LENGTH_SHORT).show();
@@ -146,9 +162,7 @@ public class HomeActivity extends AppCompatActivity {
             } else {
                 Toast.makeText(HomeActivity.this, "Envoie des message refusé", Toast.LENGTH_SHORT).show();
             }
-        }
-
-        else if (requestCode == FINE_LOCATION_PERMISSION_CODE) {
+        } else if (requestCode == FINE_LOCATION_PERMISSION_CODE) {
             if (grantResults.length > 0
                     && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
 
@@ -160,26 +174,24 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     /*Demarrer l'appel des ugences*/
-    public void makeCall()
-    {
+    public void makeCall() {
         Intent callIntent = new Intent(Intent.ACTION_CALL);
-        callIntent.setData(Uri.parse("tel:"+117));//change the number
+        callIntent.setData(Uri.parse("tel:" + 117));//change the number
         startActivity(callIntent);
     }
 
-    public void sendSMD()
-    {
+    public void sendSMD() {
         SmsManager smsManager = SmsManager.getDefault();
         smsManager.sendTextMessage("+237693615121", null, "position ", null, null);
-        Toast.makeText(getApplicationContext(), "SMS sent.",Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(), "SMS sent.", Toast.LENGTH_LONG).show();
     }
 
-    public void getLocation(){
+    public void getLocation() {
         gpsTracker = new GpsTracker(HomeActivity.this);
-        if(gpsTracker.canGetLocation()){
+        if (gpsTracker.canGetLocation()) {
             double latitude = gpsTracker.getLatitude();
             double longitude = gpsTracker.getLongitude();
-        }else{
+        } else {
             gpsTracker.showSettingsAlert();
         }
     }
@@ -194,14 +206,13 @@ public class HomeActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
 
-        if(id == R.id.connexion)
-        {
+        if (id == R.id.connexion) {
             Intent intent = new Intent(this, ConnexionActivity.class);
             startActivity(intent);
-        }else if (id == R.id.register){
+        } else if (id == R.id.register) {
             Intent intent = new Intent(this, RegisterMemberActivity.class);
             startActivity(intent);
-        }else if (id == R.id.registerAssociation){
+        } else if (id == R.id.registerAssociation) {
             Intent intent = new Intent(this, CompteAssociation.class);
             startActivity(intent);
         }
