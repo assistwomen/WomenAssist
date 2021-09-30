@@ -3,9 +3,57 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+<<<<<<< HEAD
         <entry key="..\:/Users/jaure/AndroidStudioProjects/WomenAssist/app/src/main/res/layout/activity_contact_confiance.xml" value="0.3546875" />
         <entry key="..\:/Users/jaure/AndroidStudioProjects/WomenAssist/app/src/main/res/layout/activity_home.xml" value="0.3546875" />
         <entry key="..\:/Users/jaure/AndroidStudioProjects/WomenAssist/app/src/main/res/layout/activity_modifier_forum.xml" value="0.3546875" />
+=======
+        <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/drawable/blackbutton.xml" value="0.2203125" />
+        <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/drawable/bool.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/drawable/bool_dark.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/drawable/bool_red.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/drawable/ic_baseline_thumb_up_24.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/drawable/ic_favorite.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/drawable/input_field.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/drawable/redbutton.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/layout/activity_affiche_association.xml" value="0.2" />
+        <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/layout/activity_aide.xml" value="0.2" />
+        <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/layout/activity_ajout_article.xml" value="0.2" />
+        <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/layout/activity_ajout_fiche_conseil.xml" value="0.25" />
+        <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/layout/activity_ajout_forum.xml" value="0.2" />
+        <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/layout/activity_ajout_responsable.xml" value="0.2" />
+        <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/layout/activity_apropos.xml" value="0.2" />
+        <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/layout/activity_compte_association2.xml" value="0.2" />
+        <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/layout/activity_compte_membre.xml" value="0.2" />
+        <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/layout/activity_connexion.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/layout/activity_contact_confiance.xml" value="0.19814814814814816" />
+        <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/layout/activity_details_conseil.xml" value="0.2" />
+        <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/layout/activity_fiche_conseil.xml" value="0.2" />
+        <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/layout/activity_historique_alerte.xml" value="0.33" />
+        <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/layout/activity_home.xml" value="0.25" />
+        <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/layout/activity_liste_article.xml" value="0.2" />
+        <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/layout/activity_liste_association.xml" value="0.22" />
+        <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/layout/activity_liste_forum.xml" value="0.2" />
+        <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/layout/activity_membre_association.xml" value="0.33" />
+        <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/layout/activity_modifier_fiche_conseil.xml" value="0.2" />
+        <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/layout/activity_modifier_forum.xml" value="0.2" />
+        <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/layout/activity_mon_compte.xml" value="0.2" />
+        <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/layout/activity_notification.xml" value="0.2" />
+        <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/layout/activity_responsable_association.xml" value="0.2" />
+        <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/layout/activity_splash_screen.xml" value="0.2" />
+        <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/layout/item_contact.xml" value="0.1824074074074074" />
+        <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/layout/item_fiche_conseil.xml" value="0.33" />
+        <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/layout/item_historique_alerte.xml" value="0.5" />
+        <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/layout/item_list_association.xml" value="0.1" />
+        <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/layout/item_list_forum.xml" value="0.2" />
+        <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/layout/item_liste_article.xml" value="0.22" />
+        <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/layout/item_member_association.xml" value="0.33" />
+        <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/layout/item_responsable_association.xml" value="0.33" />
+        <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/layout/protecteur_fragment.xml" value="0.1824074074074074" />
+        <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/layout/protege_fragment.xml" value="0.2" />
+        <entry key="..\:/Users/LA COREENNE/AndroidStudioProjects/WomenAssist/app/src/main/res/menu/bottom_menu.xml" value="0.2" />
+>>>>>>> ad73ce2818af4f8fa17ce5bd9f1a537cbf29439f
       </map>
     </option>
   </component>
