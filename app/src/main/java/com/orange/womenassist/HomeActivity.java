@@ -50,6 +50,30 @@ public class HomeActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         bottomNavigationView.setBackground(null);
 
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()) {
+
+                    case R.id.forum:
+                        startActivity( new Intent( HomeActivity.this , ListeForum.class));
+                        break;
+                    case R.id.contact:
+                        startActivity( new Intent( HomeActivity.this , ContactConfianceActivity.class));
+                        break;
+                    case R.id.holder:
+                        break;
+                    case R.id.article:
+                        startActivity( new Intent( HomeActivity.this , ListeArticle.class));
+                        break;
+                    case R.id.parametres:
+                        startActivity( new Intent( HomeActivity.this , MonCompte.class));
+                        break;
+                }
+                return true;
+            }
+        });
+
         bottomNavigationView.setOnNavigationItemReselectedListener(new BottomNavigationView.OnNavigationItemReselectedListener() {
             @Override
             public void onNavigationItemReselected(@NonNull MenuItem item) {

@@ -1,6 +1,8 @@
 package com.orange.womenassist;
 
-public class ListeArticle {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class ListeArticle extends AppCompatActivity {
 
     private String nomArticle;
     private String descriptionArticle;

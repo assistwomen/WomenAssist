@@ -1,6 +1,8 @@
 package com.orange.womenassist;
 
-public class ListeForum {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class ListeForum extends AppCompatActivity {
 
     private String nomForum;
     private String descriptionForum;

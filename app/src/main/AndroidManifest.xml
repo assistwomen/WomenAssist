@@ -20,6 +20,15 @@
             android:name=".ResponsableAssociationActivity"
             android:exported="true" />
         <activity
+            android:name=".ListeForum"
+            android:exported="true" />
+        <activity
+            android:name=".ListeArticle"
+            android:exported="true" />
+        <activity
+            android:name=".MonCompte"
+            android:exported="true" />
+        <activity
             android:name=".ListeArticleActivity"
             android:exported="true">
         </activity>
@@ -40,9 +49,6 @@
             android:exported="true" />
         <activity
             android:name=".CompteMembre"
-            android:exported="true" />
-        <activity
-            android:name=".MonCompte"
             android:exported="true" />
         <activity
             android:name=".Aide"
