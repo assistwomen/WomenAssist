@@ -50,7 +50,7 @@ public class HomeActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         bottomNavigationView.setBackground(null);
 
-        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener()  {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
@@ -64,10 +64,10 @@ public class HomeActivity extends AppCompatActivity {
                     case R.id.holder:
                         break;
                     case R.id.article:
-                        startActivity( new Intent( HomeActivity.this , ListeArticle.class));
+                        startActivity( new Intent( HomeActivity.this , ListeArticleActivity.class));
                         break;
                     case R.id.parametres:
-                        startActivity( new Intent( HomeActivity.this , MonCompte.class));
+                        startActivity( new Intent( HomeActivity.this , Parametre.class));
                         break;
                 }
                 return true;
@@ -99,7 +99,7 @@ public class HomeActivity extends AppCompatActivity {
 
         //authetification anonyme
         if (FireBaseUtils.signInAnonymously() == null) {
-            Toast.makeText(this, "Vous n'êtes pas connecté", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Vérifiez votre connexion internet", Toast.LENGTH_LONG).show();
         }
 
         try {

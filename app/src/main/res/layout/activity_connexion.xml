@@ -20,7 +20,7 @@
     <EditText
         android:id="@+id/edtPseudo"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="48dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="100dp"
         android:layout_marginEnd="24dp"
@@ -35,7 +35,7 @@
     <EditText
         android:id="@+id/edtPassword"
         android:layout_width="0dp"
-        android:layout_height="60dp"
+        android:layout_height="48dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
@@ -51,7 +51,7 @@
     <Button
         android:id="@+id/btnConnexion"
         android:layout_width="wrap_content"
-        android:layout_height="60dp"
+        android:layout_height="48dp"
         android:layout_marginTop="24dp"
         android:background="@drawable/redbutton"
         android:fontFamily="@font/bold"
@@ -64,8 +64,22 @@
         app:layout_constraintStart_toStartOf="@+id/edtPassword"
         app:layout_constraintTop_toBottomOf="@+id/edtPassword" />
 
+    <!-- Circular progress indicator -->
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/tvtregister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnConnexion" />
+
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/bold"
@@ -77,7 +91,7 @@
         app:layout_constraintTop_toTopOf="@+id/btnConnexion" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tvtForgetpassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
@@ -89,7 +103,7 @@
         app:layout_constraintStart_toStartOf="@+id/btnConnexion" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/tvtregister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -97,9 +111,9 @@
         android:text="Rejoignez nous"
         android:textColor="@color/pink"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView2"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toTopOf="@+id/textView2" />
+        app:layout_constraintBottom_toBottomOf="@+id/tvtForgetpassword"
+        app:layout_constraintStart_toEndOf="@+id/tvtForgetpassword"
+        app:layout_constraintTop_toTopOf="@+id/tvtForgetpassword" />
 
     <TextView
         android:id="@+id/textView4"

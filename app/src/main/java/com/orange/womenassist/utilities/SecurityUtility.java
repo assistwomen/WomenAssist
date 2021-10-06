@@ -45,7 +45,7 @@ public class SecurityUtility {
 
 
 
-    private static boolean validatePassword(String originalPassword, String storedPassword) throws NoSuchAlgorithmException, InvalidKeySpecException
+    public static boolean validatePassword(String originalPassword, String storedPassword) throws NoSuchAlgorithmException, InvalidKeySpecException
     {
         String[] parts = storedPassword.split(":");
         int iterations = Integer.parseInt(parts[0]);
@@ -82,7 +82,7 @@ public class SecurityUtility {
 
 /*
 *
-*         String  originalPassword = "password";
+*       String  originalPassword = "password";
         String generatedSecuredPasswordHash = generateStorngPasswordHash(originalPassword);
         System.out.println(generatedSecuredPasswordHash);
 

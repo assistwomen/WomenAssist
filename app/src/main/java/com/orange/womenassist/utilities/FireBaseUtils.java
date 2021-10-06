@@ -15,17 +15,32 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
 import com.orange.womenassist.models.User;
 
 public class FireBaseUtils {
 
     private static final String USER_COLLECTION = "Utilisateurs";
     private static CollectionReference refCollection;
-    private static boolean result;
+    private static User user = null;
+    private static boolean result = true;
     private static FirebaseAuth mAuth;
 
     public static CollectionReference getFireBaseReference(String collectionName){
+
+        if(refCollection == null)
+        {
+            FirebaseFirestore db = FirebaseFirestore.getInstance();
+            refCollection = db.collection(collectionName);
+            return refCollection;
+        }
+        return refCollection;
+    }
+
+    public static CollectionReference getFireBaseAssociationReference(String collectionName){
 
         if(refCollection == null)
         {
@@ -68,6 +83,63 @@ public class FireBaseUtils {
         return result;
     }
 
+    public static User getUserToLoginWithId(String userid)
+    {
+        FireBaseUtils.getFireBaseReference(USER_COLLECTION).document(userid)
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+                        if (task.isSuccessful()) {
+                            DocumentSnapshot document = task.getResult();
+                            if (document.exists()) {
+                                Log.d("seccessgetdocument", "DocumentSnapshot data: " + document.getData());
+                                user =  new User();
+                                user.setPassword(document.getString("password"));
+                                user.setPseudo(document.getString("pseudo"));
+                            } else {
+                                Log.d("userdontexist", "No such document");
+                                user = null;
+                            }
+                        } else {
+                            Log.d("failttogetuser", "get failed with ", task.getException());
+                            user = null;
+                        }
+
+                    }
+                });
+        return user;
+    }
+
+
+    public static User getUserWithSpseudo(String pseudo)
+    {
+        FireBaseUtils.getFireBaseReference(USER_COLLECTION)
+                .whereEqualTo("pseudo", pseudo)
+                .whereEqualTo("is_exist", true)
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        if (task.isSuccessful()) {
+                            for (QueryDocumentSnapshot document : task.getResult()) {
+                                Log.d("Successgetuser", "get un utilisateur retrouvé");
+                                user =  new User();
+                                user.setPassword(document.getString("password"));
+                                user.setPseudo(document.getString("pseudo"));
+                                Log.d("Successgetuser", user.getPseudo());
+                                user.setId(document.getId());
+                            }
+                            Log.d("Successgetuser", "get un utilisateur retrouvé");
+                        } else {
+                            Log.d("failttogetuser", "get failed with ", task.getException());
+                            user = null;
+                        }
+                    }
+                });
+        return user;
+    }
+
     /*permet de creer un compte anonyme*/
     public static FirebaseUser signInAnonymously (){
         FireBaseUtils.getFireBaseAuth().signInAnonymously()
@@ -80,7 +152,7 @@ public class FireBaseUtils {
                         }
                         else
                         {
-                            Log.w("FaildAuthentication", "signInAnonymously:failure", task.getException());
+                            Log.w("FailedAuthentication", "signInAnonymously:failure", task.getException());
                         }
                     }
                 });
